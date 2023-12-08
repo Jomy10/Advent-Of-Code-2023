@@ -2,5 +2,6 @@
 
 Just casually participating this year.
 
-- [day1](day01): Swift
+- [day1](day01)
+- [day2](day02)
 
