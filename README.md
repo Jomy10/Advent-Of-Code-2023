@@ -4,4 +4,5 @@ Just casually participating this year.
 
 - [day1](day01)
 - [day2](day02)
+- [day3](day03)
 
