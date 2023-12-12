@@ -1,7 +1,7 @@
 import Foundation
 
 @main
-struct day03 {
+struct day04 {
     static func main() throws {
         let input = try String(contentsOfFile: "input.txt")
         // let input = """
