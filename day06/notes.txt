@@ -1,0 +1,26 @@
+maxTime
+distanceRecord
+
+let x = time
+let y = distance
+
+0 <= x <= m
+
+    y = (m - x) * x
+<=> y = mx - x^2
+<=> -x^2 + mx - y = 0 # ax2 + bx + c = 0
+<=> x = -m - sqrt(m^2 - 4 * (-1) * (-y))   OR x = -m + sqrt(m^2 - 4y)
+        --------------------------------          -------------------
+                      2 * (-1)                          2 * (-1)
+<=> x =    -m ± sqrt(m^2 - 4y)
+        -  -------------------   
+                    2
+
+We want y (distance) to be at least distanceRecord + 1
+
+SO:
+
+time = -1 * ((maxTime ± sqrt(maxTime ^ 2 - 4 * (distanceRecord + 1))) / (2))
+
+      ==> Formula used in Race.margin
+

@@ -13,5 +13,6 @@ let package = Package(
         .executableTarget(name: "day03", path: "day03", exclude: ["README.md"], resources: [.process("input.txt")]),
         .executableTarget(name: "day04", path: "day04", resources: [.process("input.txt")]),
         .executableTarget(name: "day05", path: "day05", resources: [.process("input.txt")]),
+        .executableTarget(name: "day06", path: "day06", exclude: ["notes.txt"], resources: [.process("input.txt")]),
     ]
 )
