@@ -3,7 +3,7 @@ import Foundation
 @main
 struct day05 {
     static func main() throws {
-        let input = try String(contentsOfFile: "input.txt")
+        let input = try String(contentsOfFile: Bundle.module.url(forResource: "input", withExtension: "txt")!.path)
         let almanac = Almanac.parse(input)
         print("part 1:", almanac.initialSeeds.map { seed in almanac.locationValue(for: seed) }.min()!)
 

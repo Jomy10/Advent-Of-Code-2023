@@ -2,3 +2,6 @@
 template
 **/*.DS_Store
 
+.build
+.swiftpm
+

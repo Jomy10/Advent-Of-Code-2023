@@ -1,17 +1,14 @@
 import Foundation
 
-@main
-public struct part1 {
-    public static func main() throws {
-        let input = try String(contentsOfFile: "input.txt")
-        let digits = Digits()
+public func part2() throws {
+    let input = try String(contentsOfFile: Bundle.module.url(forResource: "input", withExtension: "txt")!.path)
+    let digits = Digits()
 
-        let calibrationValue = input.split(whereSeparator: \.isNewline).map { line in
-            Digits.formDigit(for: digits.getDigits(in: line))
-        }.reduce(0, +)
+    let calibrationValue = input.split(whereSeparator: \.isNewline).map { line in
+        Digits.formDigit(for: digits.getDigits(in: line))
+    }.reduce(0, +)
 
-        print("CalibrationValue =", calibrationValue)
-    }
+    print("CalibrationValue =", calibrationValue)
 }
 
 class NumberTree: CustomStringConvertible {

@@ -3,7 +3,7 @@ import Foundation
 @main
 public struct day02 {
     public static func main() throws {
-        let input = try String(contentsOfFile: "input.txt")
+        let input = try String(contentsOfFile: Bundle.module.url(forResource: "input", withExtension: "txt")!.path)
 
         let games = try Games.parse(input)
         
